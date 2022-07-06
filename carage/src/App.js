@@ -3,6 +3,8 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Contact from './Contact';
 import Footer from './Footer';
+import Services from './Services';
+
 
 
 
@@ -13,6 +15,7 @@ function App() {
       <Navbar/>
       <Home/>
       {/* <Contact /> */}
+      <Services/>
       <Footer/>
       </>
     </div>
