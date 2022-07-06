@@ -3,11 +3,6 @@ function About(){
 return(
 
 <>
-  
-  {/* Top Bar Start */}
- 
-  {/* Top Bar End */}
-  
   {/* Nav Bar End */}
   {/* Page Header Start */}
   <div className="page-header">
@@ -69,50 +64,7 @@ return(
     </div>
   </div>
   {/* About End */}
-  {/* Facts Start */}
-  <div className="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-map-marker-alt" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">25</h3>
-              <p>Service Points</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-user" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">350</h3>
-              <p>Engineers &amp; Workers</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-users" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">1500</h3>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-check" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">5000</h3>
-              <p>Projects Completed</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Facts End */}
+  
   {/* Team Start */}
   <div className="team">
     <div className="container">
@@ -120,23 +72,73 @@ return(
         <p>Meet Our Team</p>
         <h2>Our Engineers &amp; Workers</h2>
       </div>
-      <div className="row">
-        <div className="col-lg-3 col-md-6">
+      <div className="row justify-content-center" >
+        <div className="col-lg-4 col-md-6">
           <div className="team-item">
             <div className="team-img">
-              <img src="" alt="Team Image" />
+              <img src="./img/Obada.png" alt="Team Image" />
             </div>
             <div className="team-text">
-              <h2>Donald John</h2>
-              <p>Engineer</p>
+              <h2>Obada AlShafeey</h2>
+              <p>Product Owner</p>
               <div className="team-social">
-                <a href="">
-                  <i className="fab fa-twitter" />
+                <a href="https://github.com/obadaalshafeey">
+                  <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/obadaMalshafeey">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/obada-alshafeey-735b3518b/">
+                  <i className="fab fa-linkedin-in" />
+                </a>
+                <a href="https://www.instagram.com/obada_alshafeey/">
+                  <i className="fab fa-instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-6">
+          <div className="team-item">
+            <div className="team-img">
+              <img src="./img/Sara.png" alt="Team Image" />
+            </div>
+            <div className="team-text">
+              <h2>Sara Kteifan</h2>
+              <p>Scrum Master</p>
+              <div className="team-social">
+                <a href="https://github.com/SaraKteifan">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/sara.kteifan">
+                  <i className="fab fa-facebook-f" />
+                </a>
+                <a href="https://www.linkedin.com/in/sara-kteifan-38803222a/">
+                  <i className="fab fa-linkedin-in" />
+                </a>
+                <a href="https://www.instagram.com/sara_kteifan/">
+                  <i className="fab fa-instagram" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-4 col-md-6" >
+          <div className="team-item">
+            <div className="team-img">
+              <img src="./img/Majd.jpg" alt="Team Image" />
+            </div>
+            <div className="team-text">
+              <h2>Majd AlBalwneh</h2>
+              <p>Web Developer</p>
+              <div className="team-social">
+                <a href="https://github.com/majdalbalawneh">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100028713081196">
+                  <i className="fab fa-facebook-f" />
+                </a>
+                <a href="https://www.linkedin.com/in/majd-al-balawneh-a037411b7/">
                   <i className="fab fa-linkedin-in" />
                 </a>
                 <a href="">
@@ -146,75 +148,51 @@ return(
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-4 col-md-6">
           <div className="team-item">
             <div className="team-img">
-              <img src="img/team-2.jpg" alt="Team Image" />
+              <img src="./img/Marwa.png" alt="Team Image" />
             </div>
+            
             <div className="team-text">
-              <h2>Adam Phillips</h2>
-              <p>Engineer</p>
+              <h2>Marwa ALNseerat</h2>
+              <p>Web Developer</p>
               <div className="team-social">
-                <a href="">
-                  <i className="fab fa-twitter" />
+                <a href="https://github.com/marwanseerat">
+                  <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/gril.genration">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/marwa-nseerat-971057227/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/marwa.nseerat98/">
                   <i className="fab fa-instagram" />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-md-6">
+        <div className="col-lg-4 col-md-6">
           <div className="team-item">
             <div className="team-img">
-              <img src="img/team-3.jpg" alt="Team Image" />
+              <img src="./img/Ibrahim.png" alt="Team Image" />
             </div>
             <div className="team-text">
-              <h2>Thomas Olsen</h2>
-              <p>Worker</p>
+              <h2>Ibrahim Abedalqader</h2>
+              <p>Web Developer</p>
               <div className="team-social">
-                <a href="">
-                  <i className="fab fa-twitter" />
+                <a href="https://github.com/IbrahimTameme">
+                  <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/profile.php?id=100004494048400">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/ibrahim-tameme/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="team-item">
-            <div className="team-img">
-              <img src="img/team-4.jpg" alt="Team Image" />
-            </div>
-            <div className="team-text">
-              <h2>James Alien</h2>
-              <p>Worker</p>
-              <div className="team-social">
-                <a href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a href="">
-                  <i className="fab fa-linkedin-in" />
-                </a>
-                <a href="">
+                <a href="https://www.instagram.com/ibrahimt98/">
                   <i className="fab fa-instagram" />
                 </a>
               </div>
@@ -224,6 +202,7 @@ return(
       </div>
     </div>
   </div>
+  
   {/* Team End */}
  
 </>

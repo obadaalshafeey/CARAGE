@@ -76,8 +76,7 @@ function Footer() {
     </div>
     <div className="container copyright">
       <p>
-        © <a href="#">Your Site Name</a>, All Right Reserved. Designed By{" "}
-        <a href="https://htmlcodex.com">HTML Codex</a>
+        © <a href="/">CARAGE </a>,2022 All Right Reserved.
       </p>
     </div>
   </div>
