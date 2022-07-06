@@ -742,7 +742,7 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     background-image: linear-gradient(#E84D0C, #000000);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     transition: .5s;
 }

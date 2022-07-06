@@ -7,6 +7,8 @@ import About from './About';
 import {Routes,BrowserRouter, Route,Link} from "react-router-dom";
 // import './js/main'
 // import {$,jQuery} from 'jquery';
+import Services from './Services';
+
 
 
 
