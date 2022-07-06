@@ -30,7 +30,7 @@ return(
       <div className="row align-items-center">
         <div className="col-lg-6">
           <div className="about-img">
-            <img src="img/about.jpg" alt="Image" />
+            <img src="./img/about2.jpg" alt="Image" />
           </div>
         </div>
         <div className="col-lg-6">
@@ -40,27 +40,24 @@ return(
           </div>
           <div className="about-content">
             <p>
-              Lorem ipsum dolor sit amet elit. In vitae turpis. Donec in hendre
-              dui, vel blandit massa. Ut vestibu suscipi cursus. Cras quis porta
-              nulla, ut placerat risus. Aliquam nec magna eget velit luctus
-              dictum
-            </p>
+              
+            </p>Customers turn to CARAGE with all kinds of tuning orders, and thanks to having an experience of what we’ve been able to do in the past and what kind of a crew we have now we are positive that making any tuning idea of yours come true will be easy for us! 
             <ul>
               <li>
                 <i className="far fa-check-circle" />
-                Seats washing
+                Car wash
               </li>
               <li>
                 <i className="far fa-check-circle" />
-                Vacuum cleaning
+                Electrical cars charging
               </li>
               <li>
                 <i className="far fa-check-circle" />
-                Interior wet cleaning
+                Renting cars
               </li>
               <li>
                 <i className="far fa-check-circle" />
-                Window wiping
+                Decorating cars for occasions
               </li>
             </ul>
             <a className="btn btn-custom" href="">
@@ -127,7 +124,7 @@ return(
         <div className="col-lg-3 col-md-6">
           <div className="team-item">
             <div className="team-img">
-              <img src="img/team-1.jpg" alt="Team Image" />
+              <img src="" alt="Team Image" />
             </div>
             <div className="team-text">
               <h2>Donald John</h2>
