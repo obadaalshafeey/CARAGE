@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <>
   <meta charSet="utf-8" />
-  <title>AutoWash - Car Wash Website Template</title>
+  <title>CARAGE</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="Free Website Template" name="keywords" />
   <meta content="Free Website Template" name="description" />
@@ -33,7 +33,7 @@ function Navbar() {
   {/* Template Stylesheet */}
   <link href="css/style.css" rel="stylesheet" />
   {/* Top Bar Start */}
-  <div className="top-bar">
+  {/* <div className="top-bar">
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg-4 col-md-12">
@@ -42,7 +42,7 @@ function Navbar() {
               <h1>
                 CAR<span>AGE</span>
               </h1>
-              {/* <img src="img/logo.jpg" alt="Logo"> */}
+              
             </a>
           </div>
         </div>
@@ -85,16 +85,24 @@ function Navbar() {
         </div>
       </div>
     </div>
-  </div>
+  </div> */}
   {/* Top Bar End */}
   <>
   {/* Nav Bar Start */}
   <div className="nav-bar">
     <div className="container">
+      
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
-        <a href="#" className="navbar-brand">
-          MENU
-        </a>
+      <div className="col-lg-4 col-md-5">
+          <div className="logo">
+            <a href="index.html">
+              <h1>
+                CAR<span>AGE</span>
+              </h1>
+            </a>
+          </div>
+        </div>
+        
         <button
           type="button"
           className="navbar-toggler"
@@ -111,48 +119,19 @@ function Navbar() {
             <a href="index.html" className="nav-item nav-link active">
               Home
             </a>
+            <a href="service.html" className="nav-item nav-link">
+              Services
+            </a>
             <a href="about.html" className="nav-item nav-link">
               About
             </a>
-            <a href="service.html" className="nav-item nav-link">
-              Service
-            </a>
-            <a href="price.html" className="nav-item nav-link">
-              Price
-            </a>
-            <a href="location.html" className="nav-item nav-link">
-              Washing Points
-            </a>
-            <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-toggle="dropdown"
-              >
-                Pages
-              </a>
-              <div className="dropdown-menu">
-                <a href="blog.html" className="dropdown-item">
-                  Blog Grid
-                </a>
-                <a href="single.html" className="dropdown-item">
-                  Detail Page
-                </a>
-                <a href="team.html" className="dropdown-item">
-                  Team Member
-                </a>
-                <a href="booking.html" className="dropdown-item">
-                  Schedule Booking
-                </a>
-              </div>
-            </div>
             <a href="contact.html" className="nav-item nav-link">
               Contact
             </a>
           </div>
           <div className="ml-auto">
             <a className="btn btn-custom" href="#">
-              Get Appointment
+              Sign Up
             </a>
           </div>
         </div>
