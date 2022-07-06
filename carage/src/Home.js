@@ -1,5 +1,7 @@
 import React from 'react'
 import $ from "jquery";
+import Testimonials from './Testimonials';
+import HeroSection from './HeroSection';
 
 
 
@@ -7,64 +9,11 @@ function Home() {
   return (
     <>
       <>
-      
-  {/* Carousel Start */}
-  <div className="carousel">
-    <div className="container-fluid">
-      <div className="owl-carousel">
-        <div className="carousel-item">
-          <div className="carousel-img">
-            <img src="img/carousel-1.jpg" alt="Image" />
-          </div>
-          <div className="carousel-text">
-            <h3>Washing &amp; Detailing</h3>
-            <h1>Keep your Car Newer</h1>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris.
-              Vivamus egestas eleifend dui ac
-            </p>
-            <a className="btn btn-custom" href="">
-              Explore More
-            </a>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-img">
-            <img src="img/carousel-2.jpg" alt="Image" />
-          </div>
-          <div className="carousel-text">
-            <h3>Washing &amp; Detailing</h3>
-            <h1>Quality service for you</h1>
-            <p>
-              Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue
-              urna. Morbi sagittis orci sodales
-            </p>
-            <a className="btn btn-custom" href="">
-              Explore More
-            </a>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="carousel-img">
-            <img src="img/carousel-3.jpg" alt="Image" />
-          </div>
-          <div className="carousel-text">
-            <h3>Washing &amp; Detailing</h3>
-            <h1>Exterior &amp; Interior Washing</h1>
-            <p>
-              Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor,
-              ut rhoncus nibh ligula euismod quam
-            </p>
-            <a className="btn btn-custom" href="">
-              Explore More
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Carousel End */}
-  
+
+  {/* Video */}
+  <HeroSection/>
+  {/* End Video */}
+
   {/* Service Start */}
   <div className="service">
     <div className="container">
@@ -214,8 +163,8 @@ function Home() {
             <div className="price-header">
               <h3>Basic Cleaning</h3>
               <h2>
-                <span>$</span>
-                <strong>25</strong>
+                <span>JD</span>
+                <strong>9</strong>
                 <span>.99</span>
               </h2>
             </div>
@@ -255,8 +204,8 @@ function Home() {
             <div className="price-header">
               <h3>Premium Cleaning</h3>
               <h2>
-                <span>$</span>
-                <strong>35</strong>
+                <span>JD</span>
+                <strong>14</strong>
                 <span>.99</span>
               </h2>
             </div>
@@ -296,8 +245,8 @@ function Home() {
             <div className="price-header">
               <h3>Complex Cleaning</h3>
               <h2>
-                <span>$</span>
-                <strong>49</strong>
+                <span>JD</span>
+                <strong>19</strong>
                 <span>.99</span>
               </h2>
             </div>
@@ -339,59 +288,16 @@ function Home() {
   
   
   {/* Testimonial Start */}
-  <div className="testimonial">
-    <div className="container">
-      <div className="section-header text-center">
-        <p>Testimonial</p>
-        <h2>What our clients say</h2>
-      </div>
-      <div className="owl-carousel testimonials-carousel">
-        <div className="testimonial-item">
-          <img src="img/testimonial-1.jpg" alt="Image" />
-          <div className="testimonial-text">
-            <h3>Client Name</h3>
-            <h4>Profession</h4>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare
-              velit non vulputa. Aliqu metus tortor auctor gravid
-            </p>
-          </div>
-        </div>
-        <div className="testimonial-item">
-          <img src="img/testimonial-2.jpg" alt="Image" />
-          <div className="testimonial-text">
-            <h3>Client Name</h3>
-            <h4>Profession</h4>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare
-              velit non vulputa. Aliqu metus tortor auctor gravid
-            </p>
-          </div>
-        </div>
-        <div className="testimonial-item">
-          <img src="img/testimonial-3.jpg" alt="Image" />
-          <div className="testimonial-text">
-            <h3>Client Name</h3>
-            <h4>Profession</h4>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare
-              velit non vulputa. Aliqu metus tortor auctor gravid
-            </p>
-          </div>
-        </div>
-        <div className="testimonial-item">
-          <img src="img/testimonial-4.jpg" alt="Image" />
-          <div className="testimonial-text">
-            <h3>Client Name</h3>
-            <h4>Profession</h4>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare
-              velit non vulputa. Aliqu metus tortor auctor gravid
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="testimonial">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Testimonial</p>
+                    <h2>What our clients say</h2>
+                </div>
+  <div className='testimonials_flex'>
+    <Testimonials />
+  </div>
+  </div>
   </div>
   {/* Testimonial End */}
   {/* Blog Start */}
