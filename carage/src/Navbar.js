@@ -71,11 +71,11 @@ function Navbar() {
               Home
             </a>
             </Link>
-            {/* <Link to={</>}> */}
+            <Link to='/Services'>
             <a href="service.html" className="nav-item nav-link">
               Services
             </a>
-            {/* </Link> */}
+            </Link>
             <Link to='/About'>
             <a href="about.html" className="nav-item nav-link">
               About
