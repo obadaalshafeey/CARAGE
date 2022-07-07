@@ -34,8 +34,13 @@ video {
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+<<<<<<< HEAD:carage/src/Components/HeroSection.css
       position: relative;
     top: -60vh;
+=======
+    position: relative;
+    top: -50vh;
+>>>>>>> ef7da98efbf63b26bc89c758ad038572dbe095b5:carage/src/HeroSection.css
   }
   
   .hero-btns {
