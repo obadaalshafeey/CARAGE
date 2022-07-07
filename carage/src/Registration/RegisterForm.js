@@ -59,8 +59,8 @@ export default class UserForm extends Component {
             let Password=this.state.password
             let Phone_number=this.state.phone_number
 
-          axios.post('http://localhost/ex%20CARAGE/PHP.PHP/insert.php?name='+user_name+'&email='+Email+'&password='+Password+'&phone_number='+Phone_number)
-          // .then
+          axios.post('http://localhost/CARAGE/PHP.PHP/insert.php?name='+user_name+'&email='+Email+'&password='+Password+'&phone_number='+Phone_number)
+          window.location.href = "/Login";
 
           
             
