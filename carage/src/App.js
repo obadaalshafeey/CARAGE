@@ -1,6 +1,6 @@
 import './style.css';
 
-import Navbar from './Navbar';
+import Navbar from './Components/Navbar';
 import Home from './Home';
 import Contact from './Contact';
 import Footer from './Footer';
