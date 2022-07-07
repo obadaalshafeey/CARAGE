@@ -8,8 +8,9 @@ import Car_wash from './Components/Singlepages/Car_wash/Car_wash';
 import Charger from './Components/Singlepages/Charger/Charger';
 import About from './About';
 import {Routes,BrowserRouter, Route,Link} from "react-router-dom";
+// import './js/main'
+// import {$,jQuery} from 'jquery';
 import Services from './Services';
-import RegisterForm from './Registration/RegisterForm';
 import Wash from './Wash';
 // import Example from './Form';
 
@@ -26,7 +27,6 @@ function App() {
         <Route path="/Services" element={<Services />}/>
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
-        <Route path="/SignUp" element={<RegisterForm />}/>
       </Routes>
     </BrowserRouter>
 
