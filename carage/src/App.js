@@ -4,6 +4,8 @@ import Home from './Home';
 import Contact from './Contact';
 import Footer from './Footer';
 import Services from './Services';
+import Wash from './Wash';
+// import Example from './Form';
 
 
 
@@ -13,9 +15,12 @@ function App() {
     <div className="App">
       <>
       <Navbar/>
-      <Home/>
+      <Wash/>
+      {/* <Example/> */}
+      {/* <Home/> */}
       {/* <Contact /> */}
-      <Services/>
+      {/* <Services/> */}
+      
       <Footer/>
       </>
     </div>
