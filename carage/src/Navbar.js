@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 
 
 function Navbar() {
@@ -32,61 +36,7 @@ function Navbar() {
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   {/* Template Stylesheet */}
   <link href="css/style.css" rel="stylesheet" />
-  {/* Top Bar Start */}
-  {/* <div className="top-bar">
-    <div className="container">
-      <div className="row align-items-center">
-        <div className="col-lg-4 col-md-12">
-          <div className="logo">
-            <a href="index.html">
-              <h1>
-                CAR<span>AGE</span>
-              </h1>
-              
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-8 col-md-7 d-none d-lg-block">
-          <div className="row">
-            <div className="col-4">
-              <div className="top-bar-item">
-                <div className="top-bar-icon">
-                  <i className="far fa-clock" />
-                </div>
-                <div className="top-bar-text">
-                  <h3>Opening Hour</h3>
-                  <p>Mon - Fri, 8:00 - 9:00</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-4">
-              <div className="top-bar-item">
-                <div className="top-bar-icon">
-                  <i className="fa fa-phone-alt" />
-                </div>
-                <div className="top-bar-text">
-                  <h3>Call Us</h3>
-                  <p>+012 345 6789</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-4">
-              <div className="top-bar-item">
-                <div className="top-bar-icon">
-                  <i className="far fa-envelope" />
-                </div>
-                <div className="top-bar-text">
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> */}
-  {/* Top Bar End */}
+  
   <>
   {/* Nav Bar Start */}
   <div className="nav-bar">
@@ -95,11 +45,11 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
       <div className="col-lg-4 col-md-5">
           <div className="logo">
-            <a href="index.html">
+            <Link to='/'>
               <h1>
                 CAR<span>AGE</span>
               </h1>
-            </a>
+            </Link>
           </div>
         </div>
         
@@ -116,18 +66,26 @@ function Navbar() {
           id="navbarCollapse"
         >
           <div className="navbar-nav mr-auto">
+          <Link to='/'>
             <a href="index.html" className="nav-item nav-link active">
               Home
             </a>
+            </Link>
+            <Link to='/Services'>
             <a href="service.html" className="nav-item nav-link">
               Services
             </a>
+            </Link>
+            <Link to='/About'>
             <a href="about.html" className="nav-item nav-link">
               About
             </a>
+            </Link>
+            <Link to='/Contact'>
             <a href="contact.html" className="nav-item nav-link">
               Contact
             </a>
+            </Link>
           </div>
           <div className="ml-auto">
             <a className="btn btn-custom" href="#">
