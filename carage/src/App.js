@@ -10,6 +10,8 @@ import {Routes,BrowserRouter, Route,Link} from "react-router-dom";
 // import './js/main'
 // import {$,jQuery} from 'jquery';
 import Services from './Services';
+import Wash from './Wash';
+// import Example from './Form';
 
 
 
