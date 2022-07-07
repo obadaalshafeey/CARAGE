@@ -88,9 +88,11 @@ function Navbar() {
             </Link>
           </div>
           <div className="ml-auto">
+            <Link to='/SignUp'>
             <a className="btn btn-custom" href="#">
               Sign Up
             </a>
+            </Link>
           </div>
         </div>
       </nav>
