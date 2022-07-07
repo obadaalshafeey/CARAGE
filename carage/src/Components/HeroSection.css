@@ -11,10 +11,11 @@ video {
     /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
     height: 100vh;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
   }
@@ -24,7 +25,7 @@ video {
     font-size: 100px;
     margin-top: -100px;
     position: relative;
-    top: -50vh;
+    top: -60vh;
   }
   
   .hero-container > p {
@@ -33,14 +34,19 @@ video {
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+<<<<<<< HEAD:carage/src/Components/HeroSection.css
+      position: relative;
+    top: -60vh;
+=======
     position: relative;
     top: -50vh;
+>>>>>>> ef7da98efbf63b26bc89c758ad038572dbe095b5:carage/src/HeroSection.css
   }
   
   .hero-btns {
     margin-top: 32px;
     position: relative;
-    top: -50vh;
+    top: -60vh;
   }
   
   .hero-btns .btn {

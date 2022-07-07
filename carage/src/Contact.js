@@ -1,24 +1,11 @@
 import React from 'react'
+import Header from './Components/Header'
 
 function Contact ()  {
   return (
     
     <div>
-      {/* Page Header Start */}
-  <div className="page-header">
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <h2>Contact Us</h2>
-        </div>
-        <div className="col-12">
-          <a href="">Home</a>
-          <a href="">Contact</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Page Header End */}
+    <Header title= 'Contact Us'/>
         <div className="contact">
   <div className="container">
     <div className="section-header text-center">
