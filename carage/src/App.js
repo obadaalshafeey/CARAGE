@@ -12,14 +12,14 @@ import {Routes,BrowserRouter, Route,Link} from "react-router-dom";
 import Services from './Services';
 import Wash from './Wash';
 // import Example from './Form';
-
+import Try from './Components/Try/Try';
 
 
 
 function App() {
   return (
       <>
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -30,8 +30,8 @@ function App() {
     </BrowserRouter>
 
     <Footer/>
-    <Charger/>
-    
+    <Charger/> */}
+    <Try/>
     </>
   );
 }
