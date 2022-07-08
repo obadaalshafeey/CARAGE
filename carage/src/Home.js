@@ -4,6 +4,7 @@ import Testimonials from './Testimonials';
 import Fact from './Components/Fact';
 import HeroSection from './Components/HeroSection';
 import ServicesGrid from './Components/ServicesGrid';
+import SubHeader from './Components/SubHeader';
 
 
 
@@ -20,10 +21,7 @@ function Home() {
   {/* Service Start */}
   <div className="service">
     <div className="container">
-      <div className="section-header text-center">
-        <p>What We Do?</p>
-        <h2>Premium Washing Services</h2>
-      </div>
+      <SubHeader subTitle1='What We Do?' subTitle2='Premium Services'/>
       <ServicesGrid/>
     </div>
   </div>
@@ -34,10 +32,7 @@ function Home() {
   {/* Price Start */}
   <div className="price">
     <div className="container">
-      <div className="section-header text-center">
-        <p>Washing Plan</p>
-        <h2>Choose Your Plan</h2>
-      </div>
+      <SubHeader subTitle1='Packages' subTitle2='Choose Your Package'/>
       <div className="row">
         <div className="col-md-4">
           <div className="price-item">
@@ -171,10 +166,7 @@ function Home() {
   {/* Testimonial Start */}
   <div class="testimonial">
             <div class="container">
-                <div class="section-header text-center">
-                    <p>Testimonial</p>
-                    <h2>What our clients say</h2>
-                </div>
+  <SubHeader subTitle1='Testimonial' subTitle2='What our clients say'/>
   <div className='testimonials_flex'>
     <Testimonials />
   </div>

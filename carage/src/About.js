@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Components/Header';
+import SubHeader from './Components/SubHeader';
 import { Link } from 'react-router-dom';
 function About(){
 return(
@@ -58,10 +59,7 @@ return(
   {/* Team Start */}
   <div className="team">
     <div className="container">
-      <div className="section-header text-center">
-        <p>Meet Our Team</p>
-        <h2>Our Engineers &amp; Workers</h2>
-      </div>
+      <SubHeader subTitle1='Meet Our Team' subTitle2='Carage Scrum Team'/>
       <div className="row justify-content-center" >
         <div className="col-lg-4 col-md-6">
           <div className="team-item">
@@ -72,16 +70,16 @@ return(
               <h2>Obada AlShafeey</h2>
               <p>Product Owner</p>
               <div className="team-social">
-                <a href="https://github.com/obadaalshafeey">
+                <a target='blank' href="https://github.com/obadaalshafeey">
                   <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.facebook.com/obadaMalshafeey">
+                <a target='blank' href="https://www.facebook.com/obadaMalshafeey">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="https://www.linkedin.com/in/obada-alshafeey-735b3518b/">
+                <a target='blank' href="https://www.linkedin.com/in/obada-alshafeey-735b3518b/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="https://www.instagram.com/obada_alshafeey/">
+                <a target='blank' href="https://www.instagram.com/obada_alshafeey/">
                   <i className="fab fa-instagram" />
                 </a>
               </div>
@@ -97,16 +95,16 @@ return(
               <h2>Sara Kteifan</h2>
               <p>Scrum Master</p>
               <div className="team-social">
-                <a href="https://github.com/SaraKteifan">
+                <a target='blank' href="https://github.com/SaraKteifan">
                   <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.facebook.com/sara.kteifan">
+                <a target='blank' href="https://www.facebook.com/sara.kteifan">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="https://www.linkedin.com/in/sara-kteifan-38803222a/">
+                <a target='blank' href="https://www.linkedin.com/in/sara-kteifan-38803222a/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="https://www.instagram.com/sara_kteifan/">
+                <a target='blank' href="https://www.instagram.com/sara_kteifan/">
                   <i className="fab fa-instagram" />
                 </a>
               </div>
@@ -122,16 +120,16 @@ return(
               <h2>Majd AlBalwneh</h2>
               <p>Web Developer</p>
               <div className="team-social">
-                <a href="https://github.com/majdalbalawneh">
+                <a target='blank' href="https://github.com/majdalbalawneh">
                   <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100028713081196">
+                <a target='blank' href="https://www.facebook.com/profile.php?id=100028713081196">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="https://www.linkedin.com/in/majd-al-balawneh-a037411b7/">
+                <a target='blank' href="https://www.linkedin.com/in/majd-al-balawneh-a037411b7/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="">
+                <a target='blank' href="">
                   <i className="fab fa-instagram" />
                 </a>
               </div>
@@ -148,16 +146,16 @@ return(
               <h2>Marwa ALNseerat</h2>
               <p>Web Developer</p>
               <div className="team-social">
-                <a href="https://github.com/marwanseerat">
+                <a target='blank' href="https://github.com/marwanseerat">
                   <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.facebook.com/gril.genration">
+                <a target='blank' href="https://www.facebook.com/gril.genration">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="https://www.linkedin.com/in/marwa-nseerat-971057227/">
+                <a target='blank' href="https://www.linkedin.com/in/marwa-nseerat-971057227/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="https://www.instagram.com/marwa.nseerat98/">
+                <a target='blank' href="https://www.instagram.com/marwa.nseerat98/">
                   <i className="fab fa-instagram" />
                 </a>
               </div>
@@ -173,16 +171,16 @@ return(
               <h2>Ibrahim Abedalqader</h2>
               <p>Web Developer</p>
               <div className="team-social">
-                <a href="https://github.com/IbrahimTameme">
+                <a target='blank' href="https://github.com/IbrahimTameme">
                   <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100004494048400">
+                <a target='blank' href="https://www.facebook.com/profile.php?id=100004494048400">
                   <i className="fab fa-facebook-f" />
                 </a>
-                <a href="https://www.linkedin.com/in/ibrahim-tameme/">
+                <a target='blank' href="https://www.linkedin.com/in/ibrahim-tameme/">
                   <i className="fab fa-linkedin-in" />
                 </a>
-                <a href="https://www.instagram.com/ibrahimt98/">
+                <a target='blank' href="https://www.instagram.com/ibrahimt98/">
                   <i className="fab fa-instagram" />
                 </a>
               </div>

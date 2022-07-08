@@ -1,8 +1,10 @@
-form{
+#regForm{
+    padding-top: 10vh;
     width: 25%;
-    margin-left: 500px;
+    margin-left: 600px;
 }
-.forms{background-image: url(https://play-lh.googleusercontent.com/Ip_LzDVSk0AuWeJqJJC6qmcH9jl31FIdfsvl3AcG-lxJNu0R0nqyhTZF1-9izOvEdQ=w526-h296-rw) ;
+.forms{
+/* background-image: url(https://play-lh.googleusercontent.com/Ip_LzDVSk0AuWeJqJJC6qmcH9jl31FIdfsvl3AcG-lxJNu0R0nqyhTZF1-9izOvEdQ=w526-h296-rw) ; */
 background-repeat: no-repeat;
 background-size: cover;
 
@@ -12,3 +14,24 @@ background-size: cover;
     box-sizing: border-box;
 }
 
+.d{
+
+opacity: 1.2;
+
+}
+
+#regBtn{
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    margin-left: 40%;
+}
+
+#regP{
+    text-align: center;
+    margin-top: 2vh;
+}
+#regP a{
+    color: #E84D0C;
+    font-weight: bold;
+}
