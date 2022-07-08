@@ -114,7 +114,7 @@ export default class UserForm extends Component {
 
         return (
           <div className="forms" > 
-            <form onSubmit={this.onSubmit} noValidate>
+            <form id='regForm' onSubmit={this.onSubmit} noValidate>
               <h1>Registration</h1>
                 <div className="form-group">
                   <div className="form2">
