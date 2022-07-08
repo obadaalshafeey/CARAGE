@@ -92,7 +92,7 @@ export default class LoginForm extends Component {
         const { isError } = this.state;
 
         return (
-            <form onSubmit={this.onSubmit} noValidate>
+            <form id='regForm' onSubmit={this.onSubmit} noValidate>
                             <h1>Login</h1>
 
 

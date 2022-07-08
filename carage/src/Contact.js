@@ -1,30 +1,20 @@
 import React from 'react'
+import Header from './Components/Header'
+import SubHeader from './Components/SubHeader'
 
 function Contact ()  {
+
+const notification = ()=>{
+
+}
+
   return (
     
     <div>
-      {/* Page Header Start */}
-  <div className="page-header">
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <h2>Contact Us</h2>
-        </div>
-        <div className="col-12">
-          <a href="">Home</a>
-          <a href="">Contact</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Page Header End */}
+    <Header title= 'Contact Us'/>
         <div className="contact">
   <div className="container">
-    <div className="section-header text-center">
-      <p>Get In Touch</p>
-      <h2>Contact for any query</h2>
-    </div>
+    <SubHeader subTitle1='Get In Touch' subTitle2='Contact for any query'/>
     <div className="row">
       <div className="col-md-4">
         <div className="contact-info">
@@ -111,6 +101,7 @@ function Contact ()  {
                 className="btn btn-custom"
                 type="submit"
                 id="sendMessageButton"
+                onClick={notification}
               >
                 Send Message
               </button>

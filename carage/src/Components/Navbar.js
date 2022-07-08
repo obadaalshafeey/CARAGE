@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
+import Home from '../Home';
+import About from '../About';
+import Contact from '../Contact';
 
 
 function Navbar() {
@@ -72,17 +72,17 @@ function Navbar() {
             </a>
             </Link>
             <Link to='/Services'>
-            <a href="service.html" className="nav-item nav-link">
+            <a href="service.html" className="nav-item nav-link ">
               Services
             </a>
             </Link>
             <Link to='/About'>
-            <a href="about.html" className="nav-item nav-link">
+            <a href="about.html" className="nav-item nav-link ">
               About
             </a>
             </Link>
             <Link to='/Contact'>
-            <a href="contact.html" className="nav-item nav-link">
+            <a href="contact.html" className="nav-item nav-link ">
               Contact
             </a>
             </Link>
