@@ -1,8 +1,10 @@
 import React from 'react'
 import $ from "jquery";
 import Testimonials from './Testimonials';
+import Fact from './Components/Fact';
 import HeroSection from './Components/HeroSection';
 import ServicesGrid from './Components/ServicesGrid';
+
 
 
 
@@ -27,48 +29,7 @@ function Home() {
   </div>
   {/* Service End */}
   {/* Facts Start */}
-  <div className="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-map-marker-alt" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">25</h3>
-              <p>Service Points</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-user" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">350</h3>
-              <p>Engineers &amp; Workers</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-users" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">1500</h3>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="facts-item">
-            <i className="fa fa-check" />
-            <div className="facts-text">
-              <h3 data-toggle="counter-up">5000</h3>
-              <p>Projects Completed</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <Fact/>
   {/* Facts End */}
   {/* Price Start */}
   <div className="price">
@@ -221,124 +182,7 @@ function Home() {
   </div>
   {/* Testimonial End */}
   {/* Blog Start */}
-  <div className="blog">
-    <div className="container">
-      <div className="section-header text-center">
-        <p>Our Blog</p>
-        <h2>Latest news &amp; articles</h2>
-      </div>
-      <div className="row">
-        <div className="col-lg-4">
-          <div className="blog-item">
-            <div className="blog-img">
-              <img src="img/blog-1.jpg" alt="Image" />
-              <div className="meta-date">
-                <span>01</span>
-                <strong>Jan</strong>
-                <span>2045</span>
-              </div>
-            </div>
-            <div className="blog-text">
-              <h3>
-                <a href="#">Lorem ipsum dolor sit amet</a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem,
-                quis convall diam eleife. Nam in arcu sit amet massa ferment
-                quis enim. Nunc augue velit metus congue eget semper
-              </p>
-            </div>
-            <div className="blog-meta">
-              <p>
-                <i className="fa fa-user" />
-                <a href="">Admin</a>
-              </p>
-              <p>
-                <i className="fa fa-folder" />
-                <a href="">Web Design</a>
-              </p>
-              <p>
-                <i className="fa fa-comments" />
-                <a href="">15 Comments</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4">
-          <div className="blog-item">
-            <div className="blog-img">
-              <img src="img/blog-2.jpg" alt="Image" />
-              <div className="meta-date">
-                <span>01</span>
-                <strong>Jan</strong>
-                <span>2045</span>
-              </div>
-            </div>
-            <div className="blog-text">
-              <h3>
-                <a href="#">Lorem ipsum dolor sit amet</a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem,
-                quis convall diam eleife. Nam in arcu sit amet massa ferment
-                quis enim. Nunc augue velit metus congue eget semper
-              </p>
-            </div>
-            <div className="blog-meta">
-              <p>
-                <i className="fa fa-user" />
-                <a href="">Admin</a>
-              </p>
-              <p>
-                <i className="fa fa-folder" />
-                <a href="">Web Design</a>
-              </p>
-              <p>
-                <i className="fa fa-comments" />
-                <a href="">15 Comments</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4">
-          <div className="blog-item">
-            <div className="blog-img">
-              <img src="img/blog-3.jpg" alt="Image" />
-              <div className="meta-date">
-                <span>01</span>
-                <strong>Jan</strong>
-                <span>2045</span>
-              </div>
-            </div>
-            <div className="blog-text">
-              <h3>
-                <a href="#">Lorem ipsum dolor sit amet</a>
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet elit. Pellent iaculis blandit lorem,
-                quis convall diam eleife. Nam in arcu sit amet massa ferment
-                quis enim. Nunc augue velit metus congue eget semper
-              </p>
-            </div>
-            <div className="blog-meta">
-              <p>
-                <i className="fa fa-user" />
-                <a href="">Admin</a>
-              </p>
-              <p>
-                <i className="fa fa-folder" />
-                <a href="">Web Design</a>
-              </p>
-              <p>
-                <i className="fa fa-comments" />
-                <a href="">15 Comments</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   {/* Blog End */}
 </>
 
