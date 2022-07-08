@@ -76,6 +76,14 @@ function Navbar() {
               Services
             </a>
             </Link>
+
+            <Link to='/ Wash'>
+            <a href="Car_wash.js " className="nav-item nav-link">
+           Single pages
+            </a>
+            </Link>
+
+
             <Link to='/About'>
             <a href="about.html" className="nav-item nav-link">
               About

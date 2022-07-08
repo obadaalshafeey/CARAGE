@@ -1,20 +1,13 @@
 import React from 'react';
-import Example from './Form';
+// import Car_wash from './Form';
+import Form from './Form';
 // import { Link } from 'react-router-dom';
 
 
 
 function Wash (){
-    return(
-
-
-
-        
+    return(      
 <>
-
-  
-
-
 {/* //////////////// */}
 <div className="page-header">
     <div className="container">
@@ -38,17 +31,17 @@ function Wash (){
           <div className="about-img">
 
           <div>
-    <iframe src='../Wash.mp4'
-    // C:\xampp\htdocs\ex-carage\carage\public\Wash.mp4
+    {/* <iframe src='../Wash.mp4'
+  
         frameborder='0'
         allow='autoplay; encrypted-media'
         allowfullscreen
         title='video'
- width={'90%'} height={'90%'}/>
+ width={'90%'} height={'90%'}/> */}
  </div>
 
 
-            {/* <img src="../img/15.png" alt="Image" /> */}
+            <img src="../img/carwash.png" alt="Image" />
           </div>
         </div>
         <div className="col-lg-6">
@@ -80,10 +73,9 @@ function Wash (){
             </ul>
             {/* <Link to='/Services'> */}
             {/* <a className="btn btn-custom" href=""  >
-          
-         
             </a> */}
-            <Example/>
+
+            <Form/>
             {/* </Link> */}
           </div>
         </div>
