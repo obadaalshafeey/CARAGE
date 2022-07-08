@@ -55,17 +55,20 @@ export default class UserForm extends Component {
         if (formValid(this.state)) {
             console.log(this.state.email,"form Valid");
             let user_name=this.state.name
-            let Email=this.state.email
-            let Password=this.state.password
+            let email=this.state.email
+            let password=this.state.password
             let Phone_number=this.state.phone_number
 
-          axios.post('http://localhost/CARAGE/PHP.PHP/insert.php?name='+user_name+'&email='+Email+'&password='+Password+'&phone_number='+Phone_number)
+
+
+          axios.post('http://localhost/CARAGE/PHP.PHP/insert.php?name='+user_name+'&email='+email+'&password='+password+'&phone_number='+Phone_number)
+
           window.location.href = "/Login";
 
-          
             
         } else {
             console.log("Form is invalid!");
+            
         }
     };
 
@@ -100,7 +103,9 @@ export default class UserForm extends Component {
                 
             default:
                 break;
+                
         }
+
 
         this.setState({
             isError,
@@ -114,7 +119,12 @@ export default class UserForm extends Component {
 
         return (
           <div className="forms" > 
-            <form id='regForm' onSubmit={this.onSubmit} noValidate>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <form className="d" onSubmit={this.onSubmit} noValidate>
               <h1>Registration</h1>
                 <div className="form-group">
                   <div className="form2">
@@ -166,14 +176,23 @@ export default class UserForm extends Component {
                     />
                     {isError.phone_number.length > 0 && (
                         <span className="invalid-feedback">{isError.phone_number}</span>
+                        
                     )}
                 </div>
 
-                <button type="submit" className="btn btn-block btn-danger">Create User</button>
+                <button type="submit" className="btn btn-block btn-danger">Create User  </button>
+                
                 </div>
+                
 
             </form>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             </div>
+            
            
         );
     }
