@@ -38,7 +38,7 @@ export default class LoginForm extends Component {
                
                 email: '',
                 password: ''
-            }
+            },
         }
     }
 
@@ -46,16 +46,33 @@ export default class LoginForm extends Component {
     onSubmit = e => {
         e.preventDefault();
 
-        if (formValid(this.state)) {
-            console.log(this.state)
-        } else {
-            console.log("Form is invalid!");
-        }
+        // if (formValid(this.state)) {
+        //     console.log(this.state)
+        // } else {
+        //     console.log("Form is invalid!");
+        // }
         let email=this.state.email
         let password=this.state.password
 
-        axios.post('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password)
-        // window.location.href = "/.";
+        // axios.post('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password);
+
+        axios.get('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password).then(res => {
+                        console.log(res.data);
+                        // if(res.data){
+                            let id=res.data
+                            sessionStorage.setItem("user_id", id);
+                        // }else{
+                        //     sessionStorage.clear();
+                        // }
+                        // console.log(id);
+                        // sessionStorage.setItem("user_id", id);
+                      })
+        // if(sessionStorage.getItem("user_id") == null){
+
+        // }else{
+            window.location.href = "/";
+        // }
+        
 
 
 
@@ -122,7 +139,8 @@ export default class LoginForm extends Component {
                     )}
                 </div>
 
-                <button type="submit" className="btn btn-block btn-danger">Create User</button>
+                <button type="submit" className="btn" id="regBtn">Login</button>
+                <p id='regP'>Not a member yet? <a href="/SignUp">Sign Up</a></p>
             </form>
         );
     }

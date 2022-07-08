@@ -7,23 +7,25 @@ import "./reg.css";
 const regExp = RegExp(
     /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
 )
+const passRegex= RegExp(
+    /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+)
+const phoneRegex= RegExp(
+    /^[0-9]*$/
+)
 
 const formValid = ({ isError, ...rest }) => {
-    let isValid = false;
+    let isValid = true;
+
+    Object.values(rest).forEach(val => {
+        if (val === '') {
+            isValid = false
+        }
+    });
 
     Object.values(isError).forEach(val => {
         if (val.length > 0) {
             isValid = false
-        } else {
-            isValid = true
-        }
-    });
-
-    Object.values(rest).forEach(val => {
-        if (val === null) {
-            isValid = false
-        } else {
-            isValid = true
         }
     });
 
@@ -53,7 +55,7 @@ export default class UserForm extends Component {
         e.preventDefault();
 
         if (formValid(this.state)) {
-            console.log(this.state.email,"form Valid");
+            console.log("form Valid");
             let user_name=this.state.name
             let email=this.state.email
             let password=this.state.password
@@ -92,13 +94,15 @@ export default class UserForm extends Component {
                 break;
 
             case "password":
-                isError.password =
-                    value.length < 6 ? "Atleast 6 characaters required" : "";
+                isError.password = passRegex.test(value)
+                    ? "" 
+                    : "Minimum eight characters, at least one letter and one number";
                 break;
 
                 case "phone_number":
-                  isError.phone_number =
-                      value.length < 9 ? "Atleast 10 characaters required" : "";
+                  isError.phone_number  = phoneRegex.test(value) && value.length == 10 
+                      ? "" 
+                      : "Must be 10 digits";
                   break;
                 
             default:
@@ -119,13 +123,8 @@ export default class UserForm extends Component {
 
         return (
           <div className="forms" > 
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <form className="d" onSubmit={this.onSubmit} noValidate>
-              <h1>Registration</h1>
+            <form id='regForm' className="d" onSubmit={this.onSubmit} noValidate>
+              <h1>Sign Up</h1>
                 <div className="form-group">
                   <div className="form2">
                     <label>Name</label>
@@ -180,17 +179,14 @@ export default class UserForm extends Component {
                     )}
                 </div>
 
-                <button type="submit" className="btn btn-block btn-danger">Create User  </button>
+                <button type="submit" className="btn " id="regBtn">Sign Up </button>
+                <p id='regP'>Already have an account? <a href="/Login">Login</a></p>
                 
                 </div>
                 
 
             </form>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            
             </div>
             
            
