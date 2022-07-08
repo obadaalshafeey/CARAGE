@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import axios from 'axios';
 const regExp = RegExp(
     /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/
 )
@@ -51,6 +51,14 @@ export default class LoginForm extends Component {
         } else {
             console.log("Form is invalid!");
         }
+        let email=this.state.email
+        let password=this.state.password
+
+        axios.post('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password)
+        // window.location.href = "/.";
+
+
+
     };
 
 

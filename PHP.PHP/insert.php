@@ -7,6 +7,7 @@ $email = $_REQUEST['email'];
 $password = $_REQUEST['password'];
 $location = $_REQUEST['location'];
 
+$password = md5($password);
 
 $sql = "INSERT INTO users (name,phone_number,email,password) VALUES (?,?,?,?)";
 $result  = $conn->prepare($sql);
