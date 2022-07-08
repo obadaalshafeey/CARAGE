@@ -8,23 +8,10 @@ function Testimonials() {
     <figcaption>
       <blockquote>
         <p>
-          If you do the job badly enough, sometimes you don't get asked to do it
-          again.
+        My car needed a new fuel pump. Took my car in and had the repairs done in the same day. Didn’t have issues and the car has been working fine.
         </p>
       </blockquote>
-      <h3>Wisteria Ravenclaw</h3>
-      <h4>Google Inc.</h4>
-    </figcaption>
-  </figure>
-  <figure className="snip1533">
-    <figcaption>
-      <blockquote>
-        <p>
-          I'm killing time while I wait for life to shower me with meaning and
-          happiness.
-        </p>
-      </blockquote>
-      <h3>Ursula Gurnmeister</h3>
+      <h3>Aya Al-Sawa</h3>
       <h4>Facebook</h4>
     </figcaption>
   </figure>
@@ -32,12 +19,22 @@ function Testimonials() {
     <figcaption>
       <blockquote>
         <p>
-          The only skills I have the patience to learn are those that have no
-          real application in life.{" "}
+        My car needed a new fuel pump. Took my car in and had the repairs done in the same day. Didn’t have issues and the car has been working fine.
         </p>
       </blockquote>
-      <h3>Ingredia Nutrisha</h3>
-      <h4>Twitter</h4>
+      <h3>Ghufran Al-Momani</h3>
+      <h4>Facebook</h4>
+    </figcaption>
+  </figure>
+  <figure className="snip1533">
+    <figcaption>
+      <blockquote>
+        <p>
+        Ive been using this mechanic shop for over 8 years. Hes very knowledgeable, trustworthy, fair, and clear. He has experience in many makes
+        </p>
+      </blockquote>
+      <h3>Bahaa Aldeen</h3>
+      <h4>Facebook</h4>
     </figcaption>
   </figure>
 </>
