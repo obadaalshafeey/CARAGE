@@ -11,6 +11,7 @@
     "jquery": "^3.6.0",
     "jquery-ui-dist": "^1.13.1",
     "react": "^18.2.0",
+    "react-datetime-picker": "^3.5.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-script": "^2.0.5",
