@@ -12,7 +12,7 @@ import UserForm from './Registration/RegisterForm'
 import LoginForm from './Registration/Login';
 import Wash from './Wash';
 import Form from './Form';
-// import Car_wash from './Components/Singlepages/Car_wash/Car_wash';
+import Car_wash from './Components/Singlepages/Car_wash/Car_wash';
 import Try from'./Components/Singlepages/Car_wash/Car_wash';
 
 
@@ -20,6 +20,7 @@ import Try from'./Components/Singlepages/Car_wash/Car_wash';
 
 
 function App() {
+  
   return (
       <>
     <BrowserRouter>
@@ -35,10 +36,7 @@ function App() {
         <Route path="/Login" element={<LoginForm />}/>
       </Routes>
     </BrowserRouter>
-    <Form/> 
-      <Try/>
-   < Wash/>
-    <Charger/>
+   
     <Footer/>
     
     </>
