@@ -9,9 +9,11 @@ function Navbar() {
   let id = sessionStorage.getItem("user_id");
 
   let state = false ;
+  console.log(id+"      ");
 
-  if( id !== 0 && id !== null )
+  if( id > 0 )
   {
+    console.log("sheesh");
     state = true;
   }
 
@@ -20,6 +22,7 @@ function Navbar() {
 
 
   // let is_logged = false;
+  console.log(id+"      "+is_logged);
 
  
   
@@ -38,7 +41,6 @@ function Navbar() {
 
   
   
-       console.log(id+"      "+is_logged);
 
    const logout =()=>{
 
