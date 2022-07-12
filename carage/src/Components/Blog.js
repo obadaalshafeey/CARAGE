@@ -16,7 +16,7 @@ function Blog() {
 
   loadBlog();
   }, []);
- 
+ let i=0;
 
   return (
     <div className="blog">

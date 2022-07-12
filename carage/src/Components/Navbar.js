@@ -10,7 +10,7 @@ function Navbar() {
 
   let state = false ;
 
-  if( id !== 0 && id !== null )
+  if( id > 0 && id !== null )
   {
     state = true;
   }
