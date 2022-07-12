@@ -57,6 +57,7 @@ export default class LoginForm extends Component {
         // axios.post('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password);
 
         axios.get('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password).then(res => {
+
                         console.log(res.data);
                         // if(res.data){
                             console.log(res.data);
@@ -78,6 +79,7 @@ export default class LoginForm extends Component {
                       })
       
         
+
 
 
 

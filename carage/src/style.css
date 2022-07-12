@@ -2147,3 +2147,8 @@ a:focus {
     color: #E84D0C;
     font-size: x-large;
 }
+.testimonialsImg{
+    width: 70%;
+    border-radius: 100%;
+    height: 25vh;
+}
