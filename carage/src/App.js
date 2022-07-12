@@ -30,12 +30,21 @@ function App() {
         <Route path="/Services" element={<Services />}/>
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
-        <Route path="/Contact" element={<Car_wash />}/>
+
+        <Route path="/Charger" element={<Charger />}/>
+
         <Route path="/Wash" element={<Wash />}/>
         <Route path="/SignUp" element={<UserForm />}/>
         <Route path="/Login" element={<LoginForm />}/>
       </Routes>
     </BrowserRouter>
+
+    {/* <Form/> */}
+    {/* <Try/> */}
+   {/* < Wash/> */}
+   {/* <Charger/> */}
+    <Footer/>
+
    
     <Footer/>
     
