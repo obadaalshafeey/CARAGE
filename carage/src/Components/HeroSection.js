@@ -7,12 +7,12 @@ function HeroSection() {
     <div className='hero-container'>
       <video src='./vid/pexels-westarmoney-10710639.mp4' autoPlay loop muted />
       <h1>ADVENTURE AWAITS</h1>
-      <p>Get premium services with a garage, professional patrol car service
+      <p>Get premium services with carage professional patrol car service
 </p>
       <div className='hero-btns'>
       <div className="ml-auto btn">
-            <a className="btn btn-custom" href="#">
-              Sign Up
+            <a className="btn btn-custom" href="/Services">
+              Discover More
             </a>
         </div>
       </div>

@@ -57,24 +57,17 @@ export default class LoginForm extends Component {
         // axios.post('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password);
 
         axios.get('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password).then(res => {
-                        console.log(res.data);
-                        // if(res.data){
-                            
-                            sessionStorage.setItem("user_id", res.data);
-                            let id= sessionStorage.getItem("user_id");
-                            console.log("heh"+id);
-                        // }else{
-                        //     sessionStorage.clear();
-                        // }
-                        // console.log(id);
-                        // sessionStorage.setItem("user_id", id);
-                      })
-        // if(sessionStorage.getItem("user_id") == null){
-
-        // }else{
-            window.location.href = "/";
-        // }
-        
+                        
+                        
+                      
+        if(res.data != null){
+            console.log(res.data);
+            sessionStorage.setItem("user_id", res.data);
+            // window.location.href = "/";
+        }else{
+            console.log('error');
+        }
+        })
 
 
 
