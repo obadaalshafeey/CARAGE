@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{ useState }  from 'react';
 import { Link } from 'react-router-dom';
 import Home from '../Home';
 import About from '../About';
@@ -6,6 +6,48 @@ import Contact from '../Contact';
 
 
 function Navbar() {
+  let id = sessionStorage.getItem("user_id");
+
+  let state = false ;
+
+  if( id !== 0)
+  {
+    state = true;
+  }
+
+      const [is_logged,set_logged] = useState(state);
+
+
+
+  // let is_logged = false;
+
+ 
+ 
+  
+  
+  
+
+  // const is_loggged = ()=>
+  // {
+    
+
+  //     return is_logged;
+      
+   
+  //   }
+
+
+  
+  
+      //  console.log("heh"+id+is_logged);
+
+   const logout =()=>{
+
+    sessionStorage.setItem("user_id" , 0);
+    // console.log("heh"+id+is_logged);
+    set_logged(false);
+
+   }                     
   return (
     <>
       <>
@@ -87,14 +129,49 @@ function Navbar() {
               Contact
             </a>
             </Link>
+
+
+
+            
           </div>
+
+       
+
           <div className="ml-auto">
-            <Link to='/SignUp'>
+{is_logged ? 
+(
+  <div>
+  
+           {/* <div className='welcome'>welcome</div>  */}
+
+           <a className="btn btn-custom" onClick={logout}>
+              Log out
+            </a>
+
+</div>
+
+):
+(
+              
+
+ <Link to='/SignUp'>
             <a className="btn btn-custom" href="#">
               Sign Up
             </a>
             </Link>
+
+              )
+}
           </div>
+          
+          
+         
+          
+
+
+
+         
+         
         </div>
       </nav>
     </div>
