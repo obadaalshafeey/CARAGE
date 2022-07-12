@@ -36,7 +36,7 @@ export default class LoginForm extends Component {
             password: '',
             isError: {
                
-                email: '',
+                error: false,
                 password: ''
             },
         }
@@ -57,17 +57,29 @@ export default class LoginForm extends Component {
         // axios.post('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password);
 
         axios.get('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password).then(res => {
-                        
-                        
-                      
-        if(res.data != null){
-            console.log(res.data);
-            sessionStorage.setItem("user_id", res.data);
-            // window.location.href = "/";
+
+                        console.log(res.data);
+                        // if(res.data){
+                            console.log(res.data);
+                            sessionStorage.setItem("user_id", res.data);
+                            let id= sessionStorage.getItem("user_id");
+                            console.log("heh"+id);
+
+
+  if(id > 0){
+            window.location.href = "/";
+
+
         }else{
-            console.log('error');
+            this.setState({isError:{error:true}});
+            
         }
-        })
+
+                      
+                      })
+      
+        
+
 
 
 
@@ -79,21 +91,7 @@ export default class LoginForm extends Component {
         const { name, value } = e.target;
         let isError = { ...this.state.isError };
 
-        switch (name) {
-         
-            case "email":
-                isError.email = regExp.test(value)
-                    ? ""
-                    : "Email address is invalid";
-                break;
-            case "password":
-                isError.password =
-                    value.length < 6 ? "Atleast 6 characaters required" : "";
-                break;
-            default:
-                break;
-        }
-
+    
         this.setState({
             isError,
             [name]: value
@@ -112,12 +110,12 @@ export default class LoginForm extends Component {
                     <label>Email</label>
                     <input
                         type="email"
-                        className={isError.email.length > 0 ? "is-invalid form-control" : "form-control"}
+                        className={isError.error ? "is-invalid form-control" : "form-control"}
                         name="email"
                         onChange={this.formValChange}
                     />
-                    {isError.email.length > 0 && (
-                        <span className="invalid-feedback">{isError.email}</span>
+                     {isError.error  && (
+                        <span className="invalid-feedback">email or password is wrong</span>
                     )}
                 </div>
 
@@ -125,13 +123,11 @@ export default class LoginForm extends Component {
                     <label>Password</label>
                     <input
                         type="password"
-                        className={isError.password.length > 0 ? "is-invalid form-control" : "form-control"}
+                        className= "form-control"
                         name="password"
                         onChange={this.formValChange}
                     />
-                    {isError.password.length > 0 && (
-                        <span className="invalid-feedback">{isError.password}</span>
-                    )}
+                 
                 </div>
 
                 <button type="submit" className="btn" id="regBtn">Login</button>
