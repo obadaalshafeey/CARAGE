@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ServicesGrid() {
   return (
@@ -33,6 +34,7 @@ function ServicesGrid() {
             <p>We’re big proponents of proper maintenance and service..</p>
           </div>
         </div>
+
         <div className="box">
           <div className="ser-box">
             <div className="icon">
@@ -42,7 +44,9 @@ function ServicesGrid() {
             <p>We’re big proponents of proper maintenance and service..</p>
           </div>
         </div>
+
         <div className="box">
+        <Link to='/Charger'>
           <div className="ser-box">
             <div className="icon">
               <img src="../img/10.png" alt="img4" width='30%'/>
@@ -50,16 +54,23 @@ function ServicesGrid() {
             <h4>Free SSL Certificate</h4>
             <p>We’re big proponents of proper maintenance and service..</p>
           </div>
+          </Link>
         </div>
+
+        
         <div className="box">
+          <Link to='/Wash'>
           <div className="ser-box">
             <div className="icon">
               <img src="../img/11.png" alt='database' width={'30%'}/>
             </div>
             <h4>car wash</h4>
             <p>We’re big proponents of proper maintenance and service..</p>
-          </div>
+          </div> 
+          </Link>
         </div>
+       
+        
       </div>
     </div>
   </section></div>
