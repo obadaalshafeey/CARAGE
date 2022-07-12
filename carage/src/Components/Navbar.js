@@ -10,7 +10,7 @@ function Navbar() {
 
   let state = false ;
 
-  if( id !== 0)
+  if( id !== 0 && id !== null )
   {
     state = true;
   }
@@ -21,7 +21,6 @@ function Navbar() {
 
   // let is_logged = false;
 
- 
  
   
   
@@ -39,11 +38,11 @@ function Navbar() {
 
   
   
-      //  console.log("heh"+id+is_logged);
+       console.log(id+"      "+is_logged);
 
    const logout =()=>{
 
-    sessionStorage.setItem("user_id" , 0);
+    sessionStorage.setItem("user_id" , null);
     // console.log("heh"+id+is_logged);
     set_logged(false);
 
