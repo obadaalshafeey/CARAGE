@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 
 
 
-function Wash (){
+function Charging (){
     return(      
 <>
 {/* Page Header start */}
-<Header title="Car Wash"/>
+<Header title="Car Charging"/>
   {/* Page Header End */}
   
  {/* services start */}
@@ -19,13 +19,13 @@ function Wash (){
       <div className="row align-items-center">
         <div className="col-lg-6">
           <div className="about-img">
-            <img src="./img/about2.jpg" alt="Image" />
+            <img src="./img/car_charge.webp" alt="Image" />
           </div>
         </div>
         <div className="col-lg-6">
           <div className="section-header text-left">
             <p>Service</p>
-            <h2>car washing and detailing</h2>
+            <h2>car Charging</h2>
           </div>
           <div className="about-content">
             <p>
@@ -73,4 +73,4 @@ function Wash (){
     );
 }
 
-export default Wash;
+export default Charging;

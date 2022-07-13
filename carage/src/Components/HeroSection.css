@@ -49,6 +49,7 @@ video {
     margin: 6px;
     width: 40%;
     font-size: large;
+    border: none;
   }
   
   .fa-play-circle {
