@@ -11,6 +11,11 @@ import Services from './Services';
 import UserForm from './Registration/RegisterForm'
 import LoginForm from './Registration/Login';
 import Wash from './Wash';
+import Charging from './Charging';
+import Repair from './Car Repair';
+import Decor from './Car Decoration';
+import Backup from './Monthly Backup';
+import Rent from './Car Rentals';
 import Form from './Form';
 import Car_wash from './Components/Singlepages/Car_wash/Car_wash';
 import Try from'./Components/Singlepages/Car_wash/Car_wash';
@@ -32,6 +37,11 @@ function App() {
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Charger" element={<Charger />}/>
         <Route path="/Wash" element={<Wash />}/>
+        <Route path="/Charging" element={<Charging />}/>
+        <Route path="/Repair" element={<Repair />}/>
+        <Route path="/Decor" element={<Decor />}/>
+        <Route path="/Rent" element={<Rent />}/>
+        <Route path="/Backup" element={<Backup />}/>
         <Route path="/SignUp" element={<UserForm />}/>
         <Route path="/Login" element={<LoginForm />}/>
       </Routes>

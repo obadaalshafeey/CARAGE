@@ -17,7 +17,7 @@ function Form() {
   // const [PhoneErr,setPhoneErr] = useState({});
   // const [TimeErr,setTimeErr] = useState({});
 
-
+  const [confirm, setConfirm] = useState('none');
 
   const name_handle = (e)=>{setName(e.target.value)}
   const phone_number = (e)=>{setPhone(e.target.value)}
@@ -29,9 +29,9 @@ function Form() {
   
   const auto_order_weekly = (e)=>{setAuto(e.target.value)}
   const clickHandel = ()=>{
-    axios.post('http://localhost/carage/carage_backend/washing.php?name='+name+'&phone_number='+phone+'&car_type='+car_type+'&location='+location+'&wash_type='+order+'&auto_order_weekly='+auto_order+'&time_picker='+time_picker)
+    axios.post('http://localhost/carage/carage_backend/washing.php?name='+name+'&phone_number='+phone+'&car_type='+car_type+'&location='+location+'&auto_order_weekly='+auto_order)
     .then((data) => {
-        
+        setConfirm('block')
     })
     .catch((error) => {
         console.error(error);
@@ -100,13 +100,13 @@ return(
           </label>
           <select onChange={car_typee}>
             <option selected value="" disabled ></option>
-            <option value="b" >Coupe</option>
-            <option value="ch">Micro</option>
+            <option value="C" >Coupe</option>
+            <option value="M">Micro</option>
             <option value="v">Vans</option>
-            <option value="n">Minivan</option>
-            <option value="n">Pickup</option>
-            <option value="n">Truck</option>
-            <option value="n"> Big Truck</option>
+            <option value="mv">Minivan</option>
+            <option value="p">Pickup</option>
+            <option value="t">Truck</option>
+            <option value="bt"> Big Truck</option>
           </select>
         </div>
       
@@ -120,32 +120,10 @@ return(
          
         
         <div className="question">
-          <label>Clean Type</label>
+        
           <div className="question-answer">
-            <div>
-              <input 
-                type="radio"
-                defaultValue="none"
-                id="radio_10"
-                name="activity"
-                onChange={order_type}
-              />
-              <label htmlFor="radio_10" className="radio">
-                <span>Interior Cleaning </span>
-              </label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                defaultValue="none"
-                id="radio_11"
-                name="activity"
-                onChange={order_type}
-              />
-              <label htmlFor="radio_11" className="radio">
-                <span>Externel Cleaning</span>
-              </label>
-            </div>
+            
+           
             
            
             <label>Auto Order</label>
@@ -156,8 +134,10 @@ return(
               defaultValue="none"
               id="radio_15"
               name="contact"
+              value='1'
+              onChange={auto_order_weekly}
             />
-            <label htmlFor="radio_15" className="radio" onChange={auto_order_weekly}>
+            <label htmlFor="radio_15" className="radio" >
               <span>Yes</span>
             </label>
           </div>
@@ -167,8 +147,10 @@ return(
               defaultValue="none"
               id="radio_16"
               name="contact"
+              value='0'
+              onChange={auto_order_weekly}
             />
-            <label htmlFor="radio_16" className="radio" onChange={auto_order_weekly}>
+            <label htmlFor="radio_16" className="radio" >
               <span>No</span>
             </label>
           </div>
@@ -184,6 +166,9 @@ return(
           Submit
         </button>
       </div>
+      <br></br>
+      <div class="alert alert-success" style= {{display: confirm}}  role="alert"> Service booked succefully, we will contact you back as soon as possible </div>
+
     </form>
   </div>
   
