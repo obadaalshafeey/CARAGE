@@ -1,20 +1,22 @@
-import React, { useState } from 'react'
+import React, {useState, useEffect} from "react";
 import SubHeader from './SubHeader'
 import axios from 'axios'
 
 function Blog() {
 
     const [Blog,setBlog]=useState([]);
+    let imgs= ['img/blog-1.jpg','']
+    
+  useEffect(() => {
+      const loadBlog = async () => {
+      const response = await axios.get("https://newsdata.io/api/1/news?apikey=pub_9161e371b52acfd3321931ff50a46c3eefa9&q=cars ");
 
-    // componentDidMount(){
-         axios.get(`https://newsdata.io/api/1/news?apikey=pub_9038205f94a64ffae1ffc81b3d78f90d46ca&q=cars `)
-          .then(res => {
-            console.log(res.data);
-            // setBlog( res.data.results );
-            // console.log(Blog);
-          })
+      setBlog(response.data.results);
+  };
 
-    // }
+  loadBlog();
+  }, []);
+ let i=0;
 
   return (
     <div className="blog">
@@ -28,7 +30,7 @@ function Blog() {
             <div className="col-lg-4">
             <div className="blog-item">
               <div className="blog-img">
-                <img src="img/blog-1.jpg" alt="Image" />
+                <img src="" alt="Image" />
                 <div className="meta-date">
                   <span>01</span>
                   <strong>Jan</strong>
@@ -50,7 +52,7 @@ function Blog() {
 {/* /////////////////// */}
 
 
-        <div className="col-lg-4">
+        {/* <div className="col-lg-4">
           <div className="blog-item">
             <div className="blog-img">
               <img src="img/blog-2.jpg" alt="Image" />
@@ -121,7 +123,7 @@ function Blog() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
