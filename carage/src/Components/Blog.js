@@ -9,7 +9,7 @@ function Blog() {
     
   useEffect(() => {
       const loadBlog = async () => {
-      const response = await axios.get("https://newsdata.io/api/1/news?apikey=pub_9161e371b52acfd3321931ff50a46c3eefa9&q=cars%20AND%20automobile ");
+      const response = await axios.get("https://newsdata.io/api/1/news?apikey=pub_9038205f94a64ffae1ffc81b3d78f90d46ca&q=cars%20AND%20automobile");
 
       setBlog(response.data.results);
   };
