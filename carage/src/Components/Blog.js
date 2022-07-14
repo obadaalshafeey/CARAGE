@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import SubHeader from './SubHeader'
 import axios from 'axios'
+import Show_blog from "./Show_blog";
 
 
 function Blog() {
@@ -29,6 +30,7 @@ function Blog() {
 {/* ////////////////////// */}
 
 {Blog.slice(0,3).map((blog,index)=>(
+
            <div className="col-lg-4">
            <div className="blog-item">
              <div className="blog-img">
@@ -46,6 +48,7 @@ function Blog() {
              
            </div>
          </div>
+
         )
         )}
 {/* /////////////////// */}

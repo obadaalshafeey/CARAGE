@@ -4,6 +4,9 @@ import DateTimePicker from 'react-datetime-picker';
 import './Components/Singlepages/Car_wash/Form2.css';
 
 function Form() {
+  const [confirm, setConfirm] = useState('none');
+  const [error, setErorr] = useState('none');
+  ////////////
   const [showForm, setShowForm] = useState(false);
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -17,7 +20,6 @@ function Form() {
   // const [PhoneErr,setPhoneErr] = useState({});
   // const [TimeErr,setTimeErr] = useState({});
 
-  const [confirm, setConfirm] = useState('none');
 
   const name_handle = (e)=>{setName(e.target.value)}
   const phone_number = (e)=>{setPhone(e.target.value)}
@@ -28,14 +30,35 @@ function Form() {
   
   
   const auto_order_weekly = (e)=>{setAuto(e.target.value)}
-  const clickHandel = ()=>{
+  const clickHandel = (e)=>{
+    e.preventDefault() 
+
+    if(name == '' || phone == '' ||car_type == '' ||location == '' ||order == '' )
+    {
+        setErorr('block')
+
+
+    }else
+    {
+
+    
     axios.post('http://localhost/carage/carage_backend/washing.php?name='+name+'&phone_number='+phone+'&car_type='+car_type+'&location='+location+'&auto_order_weekly='+auto_order)
-    .then((data) => {
-        setConfirm('block')
-    })
+    .then(
+      setConfirm('block') ,
+      setErorr('none'),
+      document.getElementById('name').value = "",
+      document.getElementById('address').value = "",
+      document.getElementById('phone').value = "",
+      document.getElementById('car_type').value = "",
+
+      document.getElementById('radio_15').checked = false,
+      document.getElementById('radio_16').checked = false
+
+    )
     .catch((error) => {
         console.error(error);
     });
+    }
 }
 
 
@@ -82,10 +105,10 @@ return(
           <input id="name" type="text" name="name" required=""  onChange={name_handle}/>
         </div>
         <div className="item">
-          <label htmlFor="eaddress">
+          <label htmlFor="address">
              Address<span>*</span>
           </label>
-          <input id="eaddress" type="text" name="eaddress" required=""  onChange={locationn}/>
+          <input id="address" type="text" name="address" required=""  onChange={locationn}/>
         </div>
         <div className="item">
           <label htmlFor="phone">
@@ -98,8 +121,8 @@ return(
         <label htmlFor="phone">
             Car Type<span>*</span>
           </label>
-          <select onChange={car_typee}>
-            <option selected value="" disabled ></option>
+          <select onChange={car_typee} id="car_type"> 
+            <option selected value="" disabled ></option> 
             <option value="C" >Coupe</option>
             <option value="M">Micro</option>
             <option value="v">Vans</option>
@@ -162,12 +185,13 @@ return(
         
       </div>
       <div className="btn-block">
-        <button type="submit" href="/"  onClick={clickHandel}>
+        <button type="submit"  onClick={clickHandel}>
           Submit
         </button>
       </div>
       <br></br>
       <div class="alert alert-success" style= {{display: confirm}}  role="alert"> Service booked succefully, we will contact you back as soon as possible </div>
+      <div class="alert alert-danger" style= {{display: error}}  role="alert"> You need to fill the fields </div>
 
     </form>
   </div>
