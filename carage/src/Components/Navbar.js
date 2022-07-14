@@ -89,9 +89,9 @@ function Navbar() {
       <div className="col-lg-4 col-md-5">
           <div className="logo">
             <Link to='/'>
-              <h1>
+              <h2>
                 CAR<span>AGE</span>
-              </h1>
+              </h2>
             </Link>
           </div>
         </div>
