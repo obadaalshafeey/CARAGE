@@ -13,7 +13,7 @@ function Footer() {
   {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_z5hfatv', e.target, '_ChPQ3YSwY1mr6KIH')
+    emailjs.sendForm('service_padpavu', 'template_z5hfatv', e.target, '_ChPQ3YSwY1mr6KIH')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
