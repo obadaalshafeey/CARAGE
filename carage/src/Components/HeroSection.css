@@ -20,6 +20,12 @@ video {
     object-fit: contain;
   }
   
+  .hero-container > h1 {
+    background-color: transparent;
+    color: #000;
+    font-size: 100px;
+    margin-top: -100px;}
+
   #containerDiv{
     position: relative;
     top: -60vh;
@@ -54,7 +60,7 @@ video {
   
   .hero-btns .btn {
     margin: 6px;
-    width: 40%;
+    width: 54%;
     font-size: large;
     border: none;
   }
@@ -69,9 +75,7 @@ video {
       margin-top: -150px;
     }
   }
-  /* .hero-btns .btn  {
-    width: 50%;
-  } */
+  
   @media screen and (max-width: 768px) {
     .hero-container div h1 {
       font-size: 50px;
@@ -89,5 +93,34 @@ video {
   
     .btn {
       width: 100%;
+    }
+    .hero-btns .btn  {
+    width: 81%;
+  }
+  }
+
+  @media (max-width: 650px){
+
+    .hero-btns .btn  {
+      width: 81%;
+    }
+
+    #containerDiv{
+      position: relative;
+      top: -60vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      margin: auto;
+    }
+
+    .hero-container div h1 {
+      color: #fff;
+      font-size: 52px;
+      margin-top: -100px;
+    
+    }
+
+    .hero-container div p {
+      font-size: 20px;
     }
   }
