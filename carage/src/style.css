@@ -159,17 +159,17 @@ a:focus {
     overflow: hidden;
 }
 
-.logo h1 {
+.logo h2 {
     margin: -4px 0 0 0;
     color: #E84D0C;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 50px;
     font-weight: 800;
     letter-spacing: 1px;
     font-style: italic;
 }
 
-.logo h1 span {
+.logo h2 span {
     color: #fff;
 }
 

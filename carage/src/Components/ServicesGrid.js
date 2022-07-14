@@ -13,7 +13,7 @@ function ServicesGrid() {
           <Link to='/Repair'>
           <div className="ser-box">
             <div className="icon">
-              <img src="../img/8.png" alt='setting' width={'30%'}/>
+              <img src="../img/car-maintenance.png" alt='setting' width={'30%'}/>
             </div>
             <h4>Car Repair</h4>
             <p>We’re big proponents of proper maintenance and service.</p>
