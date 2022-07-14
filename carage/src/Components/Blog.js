@@ -9,7 +9,7 @@ function Blog() {
     
   useEffect(() => {
       const loadBlog = async () => {
-      const response = await axios.get("https://newsdata.io/api/1/news?apikey=pub_9161e371b52acfd3321931ff50a46c3eefa9&q=cars%20AND%20automobile ");
+      const response = await axios.get("https://newsdata.io/api/1/news?apikey=pub_9038205f94a64ffae1ffc81b3d78f90d46ca&q=cars%20AND%20automobile");
 
       setBlog(response.data.results);
   };
@@ -17,7 +17,7 @@ function Blog() {
   loadBlog();
   }, []);
  let i=0;
-
+console.log(Blog,"blog data");
   return (
     <div className="blog">
     <div className="container">
@@ -27,27 +27,27 @@ function Blog() {
 {/* ////////////////////// */}
 
 {Blog.slice(0,3).map((blog,index)=>(
-            <div className="col-lg-4">
-            <div className="blog-item">
-              <div className="blog-img">
-                <img src={blog.image_url?blog.image_url:'./img/cars news.png'} alt="Image" className="blogImg"/>
-                {/* <div className="meta-date">
-                  <span>01</span>
-                  <strong>Jan</strong>
-                  <span>2045</span>
-                </div> */}
-              </div>
-              <div className="blog-text">
-                <h3>
-                  <a href={blog.link} target="_blank">{blog.title}</a>
-                </h3>
-                <p>
-                {blog.description.slice(0,200)}
-                </p>
-              </div>
-              
+          <div className="col-lg-4">
+          <div className="blog-item">
+            <div className="blog-img">
+              <img src={blog.image_url?blog.image_url:'./img/cars news.png'} alt="Image" className="blogImg"/>
+              {/* <div className="meta-date">
+                <span>01</span>
+                <strong>Jan</strong>
+                <span>2045</span>
+              </div> */}
             </div>
+            <div className="blog-text">
+              <h3>
+                <a href={blog.link} target="_blank">{blog.title}</a>
+              </h3>
+              <p>
+              {blog.description.slice(0,200)}
+              </p>
+            </div>
+            
           </div>
+        </div>
         )
         )}
 {/* /////////////////// */}

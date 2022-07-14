@@ -46,20 +46,15 @@ export default class LoginForm extends Component {
     onSubmit = e => {
         e.preventDefault();
 
-        // if (formValid(this.state)) {
-        //     console.log(this.state)
-        // } else {
-        //     console.log("Form is invalid!");
-        // }
+       
         let email=this.state.email
         let password=this.state.password
 
-        // axios.post('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password);
 
         axios.get('http://localhost/CARAGE/PHP.PHP/read.php?email='+email+'&password='+password).then(res => {
 
                         console.log(res.data);
-                        // if(res.data){
+                        
                             console.log(res.data);
                             sessionStorage.setItem("user_id", res.data);
                             let id= sessionStorage.getItem("user_id");
