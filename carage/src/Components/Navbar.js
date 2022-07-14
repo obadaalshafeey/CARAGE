@@ -108,7 +108,7 @@ function Navbar() {
         >
           <div className="navbar-nav mr-auto">
           <Link to='/'>
-            <a href="index.html" className="nav-item nav-link active">
+            <a href="index.html" className="nav-item nav-link ">
               Home
             </a>
             </Link>
