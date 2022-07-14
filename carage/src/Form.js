@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import DateTimePicker from 'react-datetime-picker';
 import './Components/Singlepages/Car_wash/Form2.css';
+import Rate from './Components/Rate';
 
 function Form() {
   const [confirm, setConfirm] = useState('none');
@@ -192,7 +193,7 @@ return(
       <br></br>
       <div class="alert alert-success" style= {{display: confirm}}  role="alert"> Service booked succefully, we will contact you back as soon as possible </div>
       <div class="alert alert-danger" style= {{display: error}}  role="alert"> You need to fill the fields </div>
-
+      <div style= {{display: confirm}}><Rate/></div>
     </form>
   </div>
   

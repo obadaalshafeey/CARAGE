@@ -54,6 +54,9 @@ opacity: 1.2;
     .regForm {
         width: 200%!important;
     }
+    #regForm{
+        margin-left: 15vh;
+    }
     #regForm h1{
         font-size: 1.5rem;
         width: 150%;
@@ -62,6 +65,6 @@ opacity: 1.2;
         width: 150%;
     }
     #regP{
-        width: 200%;
+        width: 230%;
     }
 }
