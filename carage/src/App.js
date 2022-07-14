@@ -19,7 +19,7 @@ import Rent from './Car Rentals';
 import Form from './Form';
 import Car_wash from './Components/Singlepages/Car_wash/Car_wash';
 import Try from'./Components/Singlepages/Car_wash/Car_wash';
-
+import Show_blog from './Components/Show_blog';
 
 
 
@@ -46,7 +46,6 @@ function App() {
         <Route path="/Login" element={<LoginForm />}/>
       </Routes>
     </BrowserRouter>
-
     {/* <Form/> */}
     {/* <Try/> */}
    {/* < Wash/> */}
