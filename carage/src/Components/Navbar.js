@@ -9,9 +9,11 @@ function Navbar() {
   let id = sessionStorage.getItem("user_id");
 
   let state = false ;
+  console.log(id+"      ");
 
   if( id > 0 )
   {
+    console.log("sheesh");
     state = true;
   }
 
@@ -20,6 +22,7 @@ function Navbar() {
 
 
   // let is_logged = false;
+  console.log(id+"      "+is_logged);
 
  
   
@@ -38,7 +41,6 @@ function Navbar() {
 
   
   
-       console.log(id+"      "+is_logged);
 
    const logout =()=>{
 
@@ -87,9 +89,9 @@ function Navbar() {
       <div className="col-lg-4 col-md-5">
           <div className="logo">
             <Link to='/'>
-              <h1>
+              <h2>
                 CAR<span>AGE</span>
-              </h1>
+              </h2>
             </Link>
           </div>
         </div>
@@ -108,7 +110,7 @@ function Navbar() {
         >
           <div className="navbar-nav mr-auto">
           <Link to='/'>
-            <a href="index.html" className="nav-item nav-link active">
+            <a href="index.html" className="nav-item nav-link ">
               Home
             </a>
             </Link>
