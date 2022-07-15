@@ -1,7 +1,10 @@
 import React from 'react'
+import Blog from './Blog'
 
 function Fact() {
   return (
+    <>
+
     <div className="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
     <div className="container">
       <div className="row">
@@ -44,6 +47,7 @@ function Fact() {
       </div>
     </div>
   </div>
+  </>
   )
 }
 

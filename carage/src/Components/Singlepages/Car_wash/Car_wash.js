@@ -4,6 +4,8 @@ import DateTimePicker from 'react-datetime-picker';
 import './Form2.css';
 
 function Try() {
+      const [confirm, setConfirm] = useState('none');
+  const [error, setErorr] = useState('none');
     // const [showForm, setShowForm] = useState(false);
 
     const [name, setName] = useState('test-name');
@@ -26,10 +28,23 @@ function Try() {
 
 
     const clickHandel = ()=>{
+        if(name == '' || phone == '' ||car_type == '' ||location == '' ||order == '' )
+        {
+            setErorr('block')
+
+
+        }
         axios.post('http://localhost/carage/carage_backend/washing.php?name='+name+'&phone_number='+phone+'&car_type='+car_type+'&location='+location+'&wash_type='+order+'&auto_order_weekly='+auto_order+'&time_picker='+time_picker)
-        .then((data) => {
+        .then(
+            setConfirm('block') ,
+            setErorr('none'),
+            document.getElementById('name').value = "",
+            document.getElementById('email').value = "",
+            document.getElementById('subject').value = "",
+            document.getElementById('message').value = ""
+
             
-        })
+        )
         .catch((error) => {
             console.error(error);
         });

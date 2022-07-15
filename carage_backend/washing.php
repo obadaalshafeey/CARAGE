@@ -1,10 +1,10 @@
 <?php
 require "connection.php";
 
-$name = $_REQUEST['name'];
+$name         = $_REQUEST['name'];
 $phone_number = $_REQUEST['phone_number'];
-$car_type = $_REQUEST['car_type'];
-$location = $_REQUEST['location'];
+$car_type     = $_REQUEST['car_type'];
+$location     = $_REQUEST['location'];
 
 $auto_order_weekly = $_REQUEST['auto_order_weekly'];
 

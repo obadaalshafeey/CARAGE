@@ -105,9 +105,10 @@ export default class LoginForm extends Component {
                     <label>Email</label>
                     <input
                         type="email"
-                        className={isError.error ? "is-invalid form-control" : "form-control"}
+                        className={isError.error ? "is-invalid form-control regForm" : "form-control regForm"}
                         name="email"
                         onChange={this.formValChange}
+                        
                     />
                      {isError.error  && (
                         <span className="invalid-feedback">email or password is wrong</span>
@@ -118,14 +119,17 @@ export default class LoginForm extends Component {
                     <label>Password</label>
                     <input
                         type="password"
-                        className= "form-control"
+                        className= "form-control regForm"
                         name="password"
                         onChange={this.formValChange}
                     />
                  
                 </div>
-
+                <div class="BTNcontainer">
+                <div class="center">
                 <button type="submit" className="btn" id="regBtn">Login</button>
+                </div>
+                </div>
                 <p id='regP'>Not a member yet? <a href="/SignUp">Sign Up</a></p>
             </form>
         );

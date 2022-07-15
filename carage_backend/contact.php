@@ -1,8 +1,8 @@
 <?php
 require "connection.php";
 
-$name = $_REQUEST['name'];
-$email = $_REQUEST['email'];
+$name    = $_REQUEST['name'];
+$email   = $_REQUEST['email'];
 $subject = $_REQUEST['subject'];
 $message = $_REQUEST['message'];
 
